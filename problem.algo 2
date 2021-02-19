@@ -1,0 +1,22 @@
+ALGORITHM problem1
+VAR 
+    ch : char := "";
+    nb-char , nb-word , nb-vow : INTEGER;
+BEGIN
+    nb-char:=0 ;
+    nb-word:= 0 ;
+    nb-vow:= 0 ;
+    WHILE (ch <> ".") DO
+        Read (ch) ;
+        nb-word:=1 ;
+        nb-char:=1 ;
+        IF (ch='a' OR ch='e' OR ch='i' OR ch='o' OR ch='u' OR ch='y' OR ch='A'  OR ch='E'  OR ch='I'  OR ch='O'  OR ch='U'  OR ch='Y' ) THEN
+            nb-vow+=1 ;
+            ELSE_IF (ch ='')
+            nb-word+=1 ;
+        END_IF
+    END_WHILE
+    Write ("the length of the sentence is " , nb-char);
+    Write ("the length of the word is " , nb-word;
+    Write ("the length of the vowels is " , nb-vow);
+END
